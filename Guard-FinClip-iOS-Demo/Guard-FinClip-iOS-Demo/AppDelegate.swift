@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //FinClip
         let config = FATStoreConfig.init()
-        config.sdkKey = "hjimBf04HU7LkBL/HhQVNXxytiTHLGdoFcB2unqE8UtndG2JOPsS9yA5fww36gSp"
-        config.sdkSecret = "60648db89633087d"
+        config.sdkKey = "8QLZmDxYi9qY5L6V1biny8bvSPmrKcweecWZYDUJmPVndG2JOPsS9yA5fww36gSp"
+        config.sdkSecret = "45b3801c5b863bc8"
         config.apiServer = "https://api.finclip.com"
         let configs = FATConfig.init(storeConfigs: [config])
 //        configs.currentUserId = "18401252136"
