@@ -24,14 +24,14 @@
 		A8492E2F280E900800D7EFA4 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8492E2E280E900800D7EFA4 /* Guard */; };
 		A86A8610280E761A00313C62 /* GuardFinClipExtender.h in Headers */ = {isa = PBXBuildFile; fileRef = A86A860F280E761A00313C62 /* GuardFinClipExtender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A86A861D280E763900313C62 /* GuardFinClipExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A861C280E763900313C62 /* GuardFinClipExtender.swift */; };
-		A8BEB6AB280ECBC90068A2F5 /* FinApplet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */; };
+		A8BEB6B2280ECFA80068A2F5 /* FinApplet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEB6B1280ECFA80068A2F5 /* FinApplet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A86A860C280E761A00313C62 /* GuardFinClipExtender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GuardFinClipExtender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86A860F280E761A00313C62 /* GuardFinClipExtender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuardFinClipExtender.h; sourceTree = "<group>"; };
 		A86A861C280E763900313C62 /* GuardFinClipExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardFinClipExtender.swift; sourceTree = "<group>"; };
-		A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinApplet.framework; path = ../../../../Desktop/FinApplet.framework; sourceTree = "<group>"; };
+		A8BEB6B1280ECFA80068A2F5 /* FinApplet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinApplet.framework; path = Framework/FinApplet.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BEB6AB280ECBC90068A2F5 /* FinApplet.framework in Frameworks */,
+				A8BEB6B2280ECFA80068A2F5 /* FinApplet.framework in Frameworks */,
 				A8492E2F280E900800D7EFA4 /* Guard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +76,7 @@
 		A8BEB6A9280ECBC80068A2F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */,
+				A8BEB6B1280ECFA80068A2F5 /* FinApplet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,6 +360,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/GuardFinClipExtender",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -410,6 +411,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/GuardFinClipExtender",
+					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

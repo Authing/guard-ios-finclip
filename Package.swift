@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(
             name: "GuardFinClipExtender",
             url: "https://github.com/Authing/guard-ios-finclip/releases/download/1.0.0/GuardFinClipExtender.xcframework.zip",
-            checksum: "a944eaf5bb3cb5d23f9d06a1541ab7945c983e373eb48fc619415ed3347719a0"
+            checksum: "e0cb73a0a8922cabbb0f283171524f250c5e704eba5d4cec13e6a33538dd3138"
         )
     ]
 )
