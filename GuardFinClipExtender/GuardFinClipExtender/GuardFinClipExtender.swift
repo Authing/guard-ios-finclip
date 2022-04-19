@@ -84,6 +84,10 @@ open class GuardFinClipExt{
                 callback?(FATExtensionCode.failure,  dic as? [String: NSObject])
             }
         }
+        
+        FATClient.shared().registerExtensionApi("login") { param, callback in
+
+        }
 
     }
 }
