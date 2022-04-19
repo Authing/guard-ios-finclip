@@ -7,10 +7,10 @@
 
 import Foundation
 import Guard
-import FinApplet
 
 open class GuardFinClipApi {
     
+
     static func registerMiniProgramsApis(){
         
         FATClient.shared().registerExtensionApi("guardRequest") { param, callback in

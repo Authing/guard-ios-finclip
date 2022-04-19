@@ -23,13 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.apiServer = "https://api.finclip.com"
         let configs = FATConfig.init(storeConfigs: [config])
 //        configs.currentUserId = "18401252136"
-        
         do {
             try FATClient.shared().initWith(configs)
         } catch {
             print("unable to init FATClient config, error: \(error)")
         }
+        
         GuardFinClipApi.registerMiniProgramsApis()
+
         return true
     }
     
