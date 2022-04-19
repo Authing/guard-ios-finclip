@@ -7,30 +7,21 @@
 
 import UIKit
 import Guard
+import GuardFinClipExtender
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //Authing
-        Authing.start("6244398c8a4575cdb2cb5656");
-        
-        //FinClip
         let config = FATStoreConfig.init()
         config.sdkKey = "8QLZmDxYi9qY5L6V1biny8bvSPmrKcweecWZYDUJmPVndG2JOPsS9yA5fww36gSp"
         config.sdkSecret = "45b3801c5b863bc8"
         config.apiServer = "https://api.finclip.com"
         let configs = FATConfig.init(storeConfigs: [config])
-//        configs.currentUserId = "18401252136"
-        do {
-            try FATClient.shared().initWith(configs)
-        } catch {
-            print("unable to init FATClient config, error: \(error)")
-        }
-        
-        GuardFinClipApi.registerMiniProgramsApis()
 
+        GuardFinClipExtender.initSDK(authingAppId: "6244398c8a4575cdb2cb5656", finclipConfigs: configs)
+        
         return true
     }
     

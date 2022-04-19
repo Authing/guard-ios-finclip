@@ -18,7 +18,8 @@
 		A81122D1280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */; };
 		A81122D3280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */; };
 		A81122E1280D4C5900D3D916 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A81122E0280D4C5900D3D916 /* Guard */; };
-		A86A85D7280E681A00313C62 /* GuardFinClipExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A85D6280E681A00313C62 /* GuardFinClipExtender.swift */; };
+		A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; };
+		A86A8622280E77D600313C62 /* GuardFinClipExtender.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A86A8623280E77D600313C62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A86A8622280E77D600313C62 /* GuardFinClipExtender.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E9C70A9B66C1DFF0DEDE06 /* Pods-Guard-FinClip-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		1BA038F431B2D34C650F586C /* Pods-Guard-FinClip-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guard-FinClip-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +70,7 @@
 		A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoUITests.swift; sourceTree = "<group>"; };
 		A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A81122E5280D4C9100D3D916 /* Guard-FinClip-iOS-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guard-FinClip-iOS-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
-		A86A85D6280E681A00313C62 /* GuardFinClipExtender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardFinClipExtender.swift; sourceTree = "<group>"; };
+		A86A861E280E779100313C62 /* GuardFinClipExtender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GuardFinClipExtender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Guard-FinClip-iOS-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */,
 				A81122E1280D4C5900D3D916 /* Guard in Frameworks */,
 				54CC21FC50DD744B5E15A362 /* libPods-Guard-FinClip-iOS-Demo.a in Frameworks */,
 			);
@@ -125,7 +141,6 @@
 				A81122B3280D4B6600D3D916 /* ViewController.swift */,
 				A81122B5280D4B6600D3D916 /* Main.storyboard */,
 				A81122B8280D4B6A00D3D916 /* Assets.xcassets */,
-				A86A85D6280E681A00313C62 /* GuardFinClipExtender.swift */,
 				A81122BA280D4B6A00D3D916 /* LaunchScreen.storyboard */,
 				A81122BD280D4B6A00D3D916 /* Info.plist */,
 				A81122E5280D4C9100D3D916 /* Guard-FinClip-iOS-Demo-Bridging-Header.h */,
@@ -153,6 +168,7 @@
 		F920056C4C5F48CFFBF1648D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A86A861E280E779100313C62 /* GuardFinClipExtender.framework */,
 				B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */,
 			);
 			name = Frameworks;
@@ -170,6 +186,7 @@
 				A81122A9280D4B6600D3D916 /* Frameworks */,
 				A81122AA280D4B6600D3D916 /* Resources */,
 				9311D43AA987D3514D753B6C /* [CP] Embed Pods Frameworks */,
+				A86A8623280E77D600313C62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86A85D7280E681A00313C62 /* GuardFinClipExtender.swift in Sources */,
 				A81122B4280D4B6600D3D916 /* ViewController.swift in Sources */,
 				A81122B0280D4B6600D3D916 /* AppDelegate.swift in Sources */,
 				A81122B2280D4B6600D3D916 /* SceneDelegate.swift in Sources */,
@@ -526,6 +542,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7MT678JXL;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FinApplet",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Guard-FinClip-iOS-Demo/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -562,6 +582,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7MT678JXL;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FinApplet",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Guard-FinClip-iOS-Demo/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
