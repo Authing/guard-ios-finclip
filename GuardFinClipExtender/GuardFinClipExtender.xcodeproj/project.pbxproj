@@ -24,27 +24,14 @@
 		A8492E2F280E900800D7EFA4 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8492E2E280E900800D7EFA4 /* Guard */; };
 		A86A8610280E761A00313C62 /* GuardFinClipExtender.h in Headers */ = {isa = PBXBuildFile; fileRef = A86A860F280E761A00313C62 /* GuardFinClipExtender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A86A861D280E763900313C62 /* GuardFinClipExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A861C280E763900313C62 /* GuardFinClipExtender.swift */; };
-		A8BEB6A2280EC0E90068A2F5 /* FinApplet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEB6A1280EC0E80068A2F5 /* FinApplet.framework */; };
+		A8BEB6AB280ECBC90068A2F5 /* FinApplet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A8142E11280E7FC50014162A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A86A860C280E761A00313C62 /* GuardFinClipExtender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GuardFinClipExtender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86A860F280E761A00313C62 /* GuardFinClipExtender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuardFinClipExtender.h; sourceTree = "<group>"; };
 		A86A861C280E763900313C62 /* GuardFinClipExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardFinClipExtender.swift; sourceTree = "<group>"; };
-		A8BEB6A1280EC0E80068A2F5 /* FinApplet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FinApplet.framework; sourceTree = "<group>"; };
+		A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinApplet.framework; path = ../../../../Desktop/FinApplet.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8BEB6A2280EC0E90068A2F5 /* FinApplet.framework in Frameworks */,
+				A8BEB6AB280ECBC90068A2F5 /* FinApplet.framework in Frameworks */,
 				A8492E2F280E900800D7EFA4 /* Guard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +52,7 @@
 			children = (
 				A86A860E280E761A00313C62 /* GuardFinClipExtender */,
 				A86A860D280E761A00313C62 /* Products */,
+				A8BEB6A9280ECBC80068A2F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,18 +69,17 @@
 			children = (
 				A86A860F280E761A00313C62 /* GuardFinClipExtender.h */,
 				A86A861C280E763900313C62 /* GuardFinClipExtender.swift */,
-				A8BEB6A0280EC0E80068A2F5 /* Frameworks */,
 			);
 			path = GuardFinClipExtender;
 			sourceTree = "<group>";
 		};
-		A8BEB6A0280EC0E80068A2F5 /* Frameworks */ = {
+		A8BEB6A9280ECBC80068A2F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8BEB6A1280EC0E80068A2F5 /* FinApplet.framework */,
+				A8BEB6AA280ECBC80068A2F5 /* FinApplet.framework */,
 			);
-			path = Frameworks;
-			sourceTree = SOURCE_ROOT;
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -117,7 +104,6 @@
 				A86A8609280E761A00313C62 /* Frameworks */,
 				A86A860A280E761A00313C62 /* Resources */,
 				A8142E0D280E7F1E0014162A /* ShellScript */,
-				A8142E11280E7FC50014162A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +359,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/GuardFinClipExtender",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -422,6 +409,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/GuardFinClipExtender",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
