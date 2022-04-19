@@ -8,7 +8,7 @@
 import Foundation
 import Guard
 
-open class GuardFinClipExtender {
+open class GuardFinClipExt{
     
     public static func initSDK(authingAppId: String, finclipConfigs: FATConfig) {
 
@@ -20,7 +20,7 @@ open class GuardFinClipExtender {
             print("unable to init FATClient config, error: \(error)")
         }
         
-        GuardFinClipExtender.registerMiniProgramsApis()
+        GuardFinClipExt.registerMiniProgramsApis()
     }
 
     static func registerMiniProgramsApis(){

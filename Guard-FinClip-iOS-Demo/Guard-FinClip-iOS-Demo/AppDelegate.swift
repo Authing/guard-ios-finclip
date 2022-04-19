@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.apiServer = "https://api.finclip.com"
         let configs = FATConfig.init(storeConfigs: [config])
 
-        GuardFinClipExtender.initSDK(authingAppId: "6244398c8a4575cdb2cb5656", finclipConfigs: configs)
+        GuardFinClipExt.initSDK(authingAppId: "6244398c8a4575cdb2cb5656", finclipConfigs: configs)
         
         return true
     }
