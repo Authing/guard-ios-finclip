@@ -21,7 +21,7 @@ class ViewController: UIViewController{
     }
 
     private func showLoginView() {
-        AuthFlow("6244398c8a4575cdb2cb5656").start { code, message, userInfo in
+        AuthFlow().start { code, message, userInfo in
             self.pushUserInfoProfileVC()
         }
     }

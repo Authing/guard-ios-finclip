@@ -11,9 +11,14 @@
 			<string>finclip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fatec9a56e016cc598e7</string>
+				<string>fate74f1f5675c048cc4</string>
 			</array>
 		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>

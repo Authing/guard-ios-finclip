@@ -21,10 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A8492E2F280E900800D7EFA4 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8492E2E280E900800D7EFA4 /* Guard */; };
 		A86A8610280E761A00313C62 /* GuardFinClipExtender.h in Headers */ = {isa = PBXBuildFile; fileRef = A86A860F280E761A00313C62 /* GuardFinClipExtender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A86A861D280E763900313C62 /* GuardFinClipExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A861C280E763900313C62 /* GuardFinClipExtender.swift */; };
 		A8BEB6B2280ECFA80068A2F5 /* FinApplet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BEB6B1280ECFA80068A2F5 /* FinApplet.framework */; };
+		A8F8B6122810058E00FB9984 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8F8B6112810058E00FB9984 /* Guard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F8B6122810058E00FB9984 /* Guard in Frameworks */,
 				A8BEB6B2280ECFA80068A2F5 /* FinApplet.framework in Frameworks */,
-				A8492E2F280E900800D7EFA4 /* Guard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 			);
 			name = GuardFinClipExtender;
 			packageProductDependencies = (
-				A8492E2E280E900800D7EFA4 /* Guard */,
+				A8F8B6112810058E00FB9984 /* Guard */,
 			);
 			productName = GuardFinClipExtender;
 			productReference = A86A860C280E761A00313C62 /* GuardFinClipExtender.framework */;
@@ -268,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,14 +358,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/GuardFinClipExtender",
 					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,11 +378,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				VALIDATE_WORKSPACE = YES;
 			};
@@ -409,14 +409,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/GuardFinClipExtender",
 					"$(PROJECT_DIR)/Framework",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,10 +428,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.GuardFinClipExtender;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
@@ -501,7 +501,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A8492E2E280E900800D7EFA4 /* Guard */ = {
+		A8F8B6112810058E00FB9984 /* Guard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8492E2D280E900800D7EFA4 /* XCRemoteSwiftPackageReference "guard-ios" */;
 			productName = Guard;

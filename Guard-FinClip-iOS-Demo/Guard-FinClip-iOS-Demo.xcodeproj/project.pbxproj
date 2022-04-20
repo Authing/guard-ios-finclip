@@ -17,9 +17,9 @@
 		A81122C7280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122C6280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift */; };
 		A81122D1280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */; };
 		A81122D3280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */; };
-		A81122E1280D4C5900D3D916 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A81122E0280D4C5900D3D916 /* Guard */; };
 		A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; };
 		A86A8622280E77D600313C62 /* GuardFinClipExtender.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8F8B615281006F900FB9984 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8F8B614281006F900FB9984 /* Guard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +71,7 @@
 		A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A81122E5280D4C9100D3D916 /* Guard-FinClip-iOS-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guard-FinClip-iOS-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A86A861E280E779100313C62 /* GuardFinClipExtender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GuardFinClipExtender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F8B61928101DDD00FB9984 /* Guard-FinClip-iOS-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Guard-FinClip-iOS-Demo.entitlements"; sourceTree = "<group>"; };
 		B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Guard-FinClip-iOS-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F8B615281006F900FB9984 /* Guard in Frameworks */,
 				A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */,
-				A81122E1280D4C5900D3D916 /* Guard in Frameworks */,
 				54CC21FC50DD744B5E15A362 /* libPods-Guard-FinClip-iOS-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +137,7 @@
 		A81122AE280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A8F8B61928101DDD00FB9984 /* Guard-FinClip-iOS-Demo.entitlements */,
 				A81122AF280D4B6600D3D916 /* AppDelegate.swift */,
 				A81122B1280D4B6600D3D916 /* SceneDelegate.swift */,
 				A81122B3280D4B6600D3D916 /* ViewController.swift */,
@@ -194,7 +196,7 @@
 			);
 			name = "Guard-FinClip-iOS-Demo";
 			packageProductDependencies = (
-				A81122E0280D4C5900D3D916 /* Guard */,
+				A8F8B614281006F900FB9984 /* Guard */,
 			);
 			productName = "Guard-FinClip-iOS-Demo";
 			productReference = A81122AC280D4B6600D3D916 /* Guard-FinClip-iOS-Demo.app */;
@@ -270,7 +272,7 @@
 			);
 			mainGroup = A81122A3280D4B6600D3D916;
 			packageReferences = (
-				A81122DF280D4C5900D3D916 /* XCRemoteSwiftPackageReference "guard-ios" */,
+				A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */,
 			);
 			productRefGroup = A81122AD280D4B6600D3D916 /* Products */;
 			projectDirPath = "";
@@ -466,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -521,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,6 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7MT678JXL;
@@ -561,13 +564,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.guard.finclip;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.GuardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -578,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7MT678JXL;
@@ -601,12 +605,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.guard.finclip;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.GuardDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -728,7 +732,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A81122DF280D4C5900D3D916 /* XCRemoteSwiftPackageReference "guard-ios" */ = {
+		A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Authing/guard-ios";
 			requirement = {
@@ -739,9 +743,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A81122E0280D4C5900D3D916 /* Guard */ = {
+		A8F8B614281006F900FB9984 /* Guard */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A81122DF280D4C5900D3D916 /* XCRemoteSwiftPackageReference "guard-ios" */;
+			package = A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */;
 			productName = Guard;
 		};
 /* End XCSwiftPackageProductDependency section */

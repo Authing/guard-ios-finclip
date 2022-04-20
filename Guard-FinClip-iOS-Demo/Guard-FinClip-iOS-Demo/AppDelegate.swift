@@ -15,12 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let config = FATStoreConfig.init()
-        config.sdkKey = "8QLZmDxYi9qY5L6V1biny8bvSPmrKcweecWZYDUJmPVndG2JOPsS9yA5fww36gSp"
-        config.sdkSecret = "45b3801c5b863bc8"
+        config.sdkKey = "HwTK/a2BZ1vl68P6K84o1nm9mWwxqcuK6wGDV6MkrZg="
+        config.sdkSecret = "f666c6fffbf81c30"
         config.apiServer = "https://api.finclip.com"
         let configs = FATConfig.init(storeConfigs: [config])
+        
+        Authing.setupWechat("wx1cddb15e280c0f67", universalLink: "https://developer-beta.authing.cn/app/")
 
-        GuardFinClipExt.initSDK(authingAppId: "6244398c8a4575cdb2cb5656", finclipConfigs: configs)
+        GuardFinClipExt.initSDK(authingAppId: "60caaf41df670b771fd08937", finclipConfigs: configs)
         
         return true
     }
@@ -41,9 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return FATClient.shared().handleOpen(url)
     }
-    
+
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return FATClient.shared().handleOpen(url)
+    }
+
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "wechatLoginOK"), object: userActivity)
+        return true
     }
 }
 

@@ -8,7 +8,7 @@
 import Foundation
 import Guard
 
-open class GuardFinClipExt{
+open class GuardFinClipExt {
     
     public static func initSDK(authingAppId: String, finclipConfigs: FATConfig) {
 
@@ -86,8 +86,30 @@ open class GuardFinClipExt{
         }
         
         FATClient.shared().registerExtensionApi("login") { param, callback in
-
+            WechatLogin.shared.login(viewController: GuardFinClipExt.topViewController() ?? UIViewController()) { code, msg, userInfo in
+                if code == 200 {
+                    let dic: NSDictionary = ["code": userInfo?.token as Any]
+                    callback?(FATExtensionCode.success, dic as? [String : NSObject])
+                } else {
+                    let dic: NSDictionary = ["code": code as Any,
+                                                    "errMsg": msg as Any]
+                    callback?(FATExtensionCode.failure,  dic as? [String: NSObject])
+                }
+            }
         }
+    }
+    
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
 
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+
+        } else if let tab = base as? UITabBarController, let selected = tab.selectedViewController {
+            return topViewController(base: selected)
+
+        } else if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
     }
 }
