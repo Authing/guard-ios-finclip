@@ -1,8 +1,8 @@
-# guard-ios-finclip
+# GuardFinClipExtender
 
 <LastUpdated/>
 
-guard-ios-finclip 为你的 FinClip 小程序提供了 Authing 的 Guard 组件强大的用户认证能力。
+GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing 的 Guard 组件强大的用户认证能力。
 
 ## GitHub 
 
@@ -145,32 +145,44 @@ App({
 })
 ```
 
-调用 API 获取相关数据
+使用 Guard API
 
 ```javascript
 getCurrentUser() {
     var _this = this
+    // 通过 app.guard 获取 url 以及 body
     let getUser = app.guard.getCurrentUser();
-       ft.guardRequest({
+      // 调用 guardRequest 
+      ft.guardRequest({
             url: getUser.url,
             body: getUser.body,
       method: getUser.method,
       success: function (res) {
-      _this.setData({
-            photo:res.data.photo,
-            userInfoItems:[
-              res.data.nickname,
-              res.data.name,
-              res.data.username,
-              res.data.phone,
-              res.data.email
-            ]
-        })
         console.log("getCurrentUser success");
       },
       fail: function (res) {
         console.log("getCurrentUser fail");
         console.log(JSON.stringify(res["errMsg"]));
       }
+    });
+```
+
+微信登录 API
+
+```javascript
+    wx.login({
+      timeout:10000,
+      success: (result) => {
+        this.setData({
+            token: result.code
+        })
+          
+      },
+      fail: (error) => {
+        this.setData({
+            token: error.errMsg
+        })
+      },
+      complete: () => {}
     });
 ```
