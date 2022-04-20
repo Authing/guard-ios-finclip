@@ -152,37 +152,37 @@ getCurrentUser() {
     var _this = this
     // 通过 app.guard 获取 url 以及 body
     let getUser = app.guard.getCurrentUser();
-      // 调用 guardRequest 
-      ft.guardRequest({
-            url: getUser.url,
-            body: getUser.body,
-      method: getUser.method,
-      success: function (res) {
+     // 调用 guardRequest 
+    ft.guardRequest({
+        url: getUser.url,
+        body: getUser.body,
+    method: getUser.method,
+    success: function (res) {
         console.log("getCurrentUser success");
-      },
-      fail: function (res) {
+    },
+    fail: function (res) {
         console.log("getCurrentUser fail");
         console.log(JSON.stringify(res["errMsg"]));
-      }
-    });
+    }
+});
 ```
 
 微信登录 API
 
 ```javascript
-    wx.login({
-      timeout:10000,
-      success: (result) => {
-        this.setData({
-            token: result.code
-        })
-          
-      },
-      fail: (error) => {
-        this.setData({
-            token: error.errMsg
-        })
-      },
-      complete: () => {}
-    });
+wx.login({
+  timeout:10000,
+  success: (result) => {
+    this.setData({
+        token: result.code
+    })
+
+  },
+  fail: (error) => {
+    this.setData({
+        token: error.errMsg
+    })
+  },
+  complete: () => {}
+});
 ```
