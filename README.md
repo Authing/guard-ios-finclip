@@ -168,13 +168,14 @@ getCurrentUser() {
 ```
 
 微信登录 API
-
+> 使用前项目配置参见:https://docs.authing.cn/v2/reference/sdk-for-ios/social/wechat.html
 ```javascript
 wx.login({
   timeout:10000,
   success: (result) => {
     this.setData({
-        token: result.code
+        // 获取 token
+        token: result.token
     })
 
   },
