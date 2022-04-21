@@ -88,7 +88,8 @@ open class GuardFinClipExt {
         FATClient.shared().registerExtensionApi("login") { param, callback in
             WechatLogin.shared.login(viewController: GuardFinClipExt.topViewController() ?? UIViewController()) { code, msg, userInfo in
                 if code == 200 {
-                    let dic: NSDictionary = ["code": userInfo?.token as Any]
+                    let dic: NSDictionary = ["code": code as Any,
+                                                    "token": userInfo?.token as Any]
                     callback?(FATExtensionCode.success, dic as? [String : NSObject])
                 } else {
                     let dic: NSDictionary = ["code": code as Any,

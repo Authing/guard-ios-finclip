@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Authing.setupWechat("wx1cddb15e280c0f67", universalLink: "https://developer-beta.authing.cn/app/")
 
-        GuardFinClipExt.initSDK(authingAppId: "60caaf41df670b771fd08937", finclipConfigs: configs)
+        GuardFinClipExt.initSDK(authingAppId: "6244398c8a4575cdb2cb5656", finclipConfigs: configs)
         
         return true
     }
