@@ -50,7 +50,7 @@ GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing 的 Guard 组�
 
 ### 小程序项目中导入 guard.js
 
-- clone demo 项目 https://github.com/Authing/authing-finclip/tree/master
+- clone demo 项目 https://github.com/Authing/authing-finclip
 
 - 将 demo 中 guard 目录下的 guard.js 导入到项目中
 
