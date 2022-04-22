@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import swiftScan
 import Guard
 
 class ViewController: UIViewController{
@@ -33,6 +32,7 @@ class ViewController: UIViewController{
         request.apiServer = "https://api.finclip.com"
         request.transitionStyle = .up
         request.startParams = [:]
+        
         FATClient.shared().startApplet(with: request, inParentViewController: self) { result, error in
             print(error)
             print(result)
@@ -40,12 +40,6 @@ class ViewController: UIViewController{
             print("close")
         }
 
-    }
-    
-    @IBAction func scanQrCode(_ sender: Any) {
-        let scanVC = LBXScanViewController()
-        scanVC.scanResultDelegate = self
-        self.navigationController?.pushViewController(scanVC, animated: false)
     }
     
     @IBAction func OpenMiniPrograms(_ sender: Any) {
@@ -62,23 +56,4 @@ class ViewController: UIViewController{
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-}
-
-extension ViewController: LBXScanViewControllerDelegate {
-    
-    func scanFinished(scanResult: LBXScanResult, error: String?) {
-        if let scan = scanResult.strScanned {
-                
-            let qrCode = FATAppletQrCodeRequest.init()
-            qrCode.qrCode = scan
-            FATClient.shared().startApplet(with: qrCode, inParentViewController: self) { result, error in
-                
-            } completion: { result, error in
-                
-            } closeCompletion: {
-                
-            }
-
-        }
-    }
 }

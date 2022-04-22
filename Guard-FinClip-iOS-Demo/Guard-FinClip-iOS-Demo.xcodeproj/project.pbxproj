@@ -17,8 +17,7 @@
 		A81122C7280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122C6280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift */; };
 		A81122D1280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */; };
 		A81122D3280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */; };
-		A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; };
-		A86A8622280E77D600313C62 /* GuardFinClipExtender.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A86A861E280E779100313C62 /* GuardFinClipExtender.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8DEAEF8281281A200D5F8D1 /* GuardFinClipExtender in Frameworks */ = {isa = PBXBuildFile; productRef = A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */; };
 		A8F8B615281006F900FB9984 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8F8B614281006F900FB9984 /* Guard */; };
 /* End PBXBuildFile section */
 
@@ -38,20 +37,6 @@
 			remoteInfo = "Guard-FinClip-iOS-Demo";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A86A8623280E77D600313C62 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A86A8622280E77D600313C62 /* GuardFinClipExtender.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E9C70A9B66C1DFF0DEDE06 /* Pods-Guard-FinClip-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +66,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F8B615281006F900FB9984 /* Guard in Frameworks */,
-				A86A8621280E77D600313C62 /* GuardFinClipExtender.framework in Frameworks */,
 				54CC21FC50DD744B5E15A362 /* libPods-Guard-FinClip-iOS-Demo.a in Frameworks */,
+				A8DEAEF8281281A200D5F8D1 /* GuardFinClipExtender in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +173,6 @@
 				A81122A9280D4B6600D3D916 /* Frameworks */,
 				A81122AA280D4B6600D3D916 /* Resources */,
 				9311D43AA987D3514D753B6C /* [CP] Embed Pods Frameworks */,
-				A86A8623280E77D600313C62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +181,7 @@
 			name = "Guard-FinClip-iOS-Demo";
 			packageProductDependencies = (
 				A8F8B614281006F900FB9984 /* Guard */,
+				A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */,
 			);
 			productName = "Guard-FinClip-iOS-Demo";
 			productReference = A81122AC280D4B6600D3D916 /* Guard-FinClip-iOS-Demo.app */;
@@ -273,6 +258,7 @@
 			mainGroup = A81122A3280D4B6600D3D916;
 			packageReferences = (
 				A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */,
+				A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */,
 			);
 			productRefGroup = A81122AD280D4B6600D3D916 /* Products */;
 			projectDirPath = "";
@@ -732,6 +718,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Authing/guard-ios-finclip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Authing/guard-ios";
@@ -743,6 +737,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */;
+			productName = GuardFinClipExtender;
+		};
 		A8F8B614281006F900FB9984 /* Guard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */;

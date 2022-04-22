@@ -2,7 +2,23 @@
 
 <LastUpdated/>
 
-GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing 的 Guard 组件强大的用户认证能力。
+<div align=center><img width="300" src="https://files.authing.co/authing-console/authing-logo-new-20210924.svg"></div>
+<br/>
+<div align="center">
+  <a href="https://docs.authing.cn/v2/" target="_blank"><img src="https://img.shields.io/badge/docs-passing-success"></a>
+  <a href="https://forum.authing.cn/" target="_blank"><img src="https://img.shields.io/badge/chat-on%20forum-blue"></a>
+  <a href="javascript:;"><img src="https://img.shields.io/badge/License-MIT-brightgreen"></a>
+  <a href="javascript:;"><img src="https://img.shields.io/badge/PRs-welcome-green"></a>
+  <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/swift-5.0-orange.svg?style=flat"></a>
+<br/>
+
+<br>
+
+GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing - Guard 组件强大的用户认证能力
+
+https://github.com/Authing/guard-ios-finclip/blob/main/demo.gif
+
+</div>
 
 ## GitHub 
 
@@ -38,7 +54,7 @@ GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing 的 Guard 组�
 
 - iOS 项目集成 guard-ios-finclip
 
-- 小程序导入 guard.js
+- 小程序导入 `guard.js`
 
 ### iOS 项目集成 guard-ios-finclip
 
@@ -52,7 +68,7 @@ GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing 的 Guard 组�
 
 - clone demo 项目 https://github.com/Authing/authing-finclip
 
-- 将 demo 中 guard 目录下的 guard.js 导入到项目中
+- 将 demo 中 guard 目录下的 `guard.js` 导入到项目中
 
 ## 初始化 SDK
 
@@ -135,7 +151,7 @@ module.exports = {
 }
 ```
 
-在小程序的 app.js 中导入 guard.js
+在小程序的 `app.js` 中导入 `guard.js`
 
 ```javascript
 const guard = require('./../guard.js')
