@@ -16,7 +16,9 @@
 
 GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing - Guard 组件强大的用户认证能力
 
-https://github.com/Authing/guard-ios-finclip/blob/main/demo.gif
+<br>
+
+![image](https://github.com/Authing/guard-ios-finclip/blob/dev_README/images-folder/demo.gif?raw=true)
 
 </div>
 
